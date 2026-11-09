@@ -1,0 +1,30 @@
+suite: "full"
+version: "1.0"
+includes:
+  - "smoke.yaml"
+cases:
+  - id: "lookup-vi-005"
+    category: "lookup_vi"
+    language: "vi"
+    user_groups: ["engineering"]
+    scope_document_key: null
+    conversation_history: []
+    question: "Làm việc đủ mấy năm thâm niên thì được cộng thêm 1 ngày phép năm?"
+    expected_behavior: "answer"
+    expected_language: "vi"
+    gold_document_keys: ["doc_leave_policy"]
+    gold_facts: ["5 năm"]
+    forbidden_substrings: []
+
+  - id: "refusal-oos-002"
+    category: "refusal_out_of_scope"
+    language: "en"
+    user_groups: ["engineering"]
+    scope_document_key: null
+    conversation_history: []
+    question: "What is the weather forecast today?"
+    expected_behavior: "refusal_out_of_scope"
+    expected_language: "en"
+    gold_document_keys: []
+    gold_facts: ["internal company documentation"]
+    forbidden_substrings: []

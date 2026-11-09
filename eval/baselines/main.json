@@ -1,0 +1,12 @@
+{
+  "permission_leak_count": 0,
+  "pii_leak_count": 0,
+  "citation_validity": 1.0,
+  "behavior_accuracy": 1.0,
+  "retrieval_recall_at_8": 1.0,
+  "answer_correctness": 0.9286,
+  "citation_precision": 1.0,
+  "refusal_accuracy": 1.0,
+  "clarify_accuracy": 1.0,
+  "cross_lingual_gap": 0.0
+}

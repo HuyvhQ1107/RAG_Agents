@@ -1,0 +1,23 @@
+:80 {
+    encode zstd gzip
+
+    handle /api/* {
+        reverse_proxy api:8000 {
+            flush_interval -1
+        }
+    }
+
+    handle /healthz {
+        reverse_proxy api:8000
+    }
+
+    handle /readyz {
+        reverse_proxy api:8000
+    }
+
+    handle {
+        root * /srv/frontend
+        try_files {path} /index.html
+        file_server
+    }
+}

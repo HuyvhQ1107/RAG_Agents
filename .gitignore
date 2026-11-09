@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.pytest_tmp/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node / Frontend
+node_modules/
+frontend/dist/
+frontend/build/
+playwright-report/
+test-results/
+*.log
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+
+# Local storage & eval outputs
+.data/
+eval/results/*.json
+
+# OS & IDEs
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
+
+# Docs & Spec-Kit / Agent folders
+*.doc
+*.docx
+~$*.doc*
+.agents/
+.specify/
+specs/
